@@ -1,0 +1,22 @@
+{
+  "name": "noc-app",
+  "version": "1.0.0",
+  "description": "This is a NOC app which can be used to monitor different kind of systems.",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Juan Arias",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
